@@ -1,0 +1,719 @@
+html {
+  font-size: 10px;
+}
+@media only screen and (min-width: 1200px) {
+	.container {
+		max-width: 1400px;
+		width: 100%;
+		padding: 0 10rem;
+  	}
+}
+@media (min-width: 768px) and (max-width: 992px) {
+	.container {
+		width: 100%;
+	}
+}
+.section-title {
+	margin-top: 2rem;
+	margin-bottom: 6rem;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 5rem;
+}
+.orange-highlight{
+	color: orange;
+}
+/* Start Header */
+.navbar-small {
+	background: #ffffff;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+	padding: 1rem;
+}
+.navbar-toggler {
+	border: none;
+}
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+	background-color: transparent;
+	outline: none;
+}
+.navbar .navbar-toggler-icon {
+	width: 3em;
+	height: 3em;
+}
+.navbar-background .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 165, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-small .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(46, 53, 77, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-default .navbar-nav {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.navbar-background .navbar-nav {
+	margin: 2.5rem;
+}
+.navbar-small .navbar-nav {
+	margin: 0;
+}
+.navbar-background .navbar-nav .nav-link {
+	color: #ffffff;
+	font-size: 1.5rem;
+}
+.navbar-small .navbar-nav .nav-link {
+	color: #000000;
+}
+.nav .nav-item {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.nav .nav-item .nav-link {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Effect hover nav */
+.navbar-default .navbar-nav .nav-link:hover {
+	color: #ffffff;
+}
+.navbar-default .navbar-nav .nav-link:focus {
+	color: #ffffff;
+}
+.navbar-small .navbar-nav .nav-link:hover {
+	color: #000000;
+}
+.navbar-small .navbar-nav .nav-link:focus {
+	color: #000000;
+}
+.active {
+	display: inline-block;
+	position: relative;
+}
+.active:before{
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	bottom: 0;
+	border-bottom: 0.3rem solid orange;
+	content: "";
+}
+/* End Header */
+
+/* Start Home View */
+#home-background {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: table;
+	background-image: url(../img/bg-1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	opacity: 90%;
+	z-index: -1;
+	text-align: center;
+}
+@media (min-width:480px) {
+	#home-background {
+		height: 1000px;
+	}
+}
+@media (min-width:768px) {
+	#home-background {
+		height: 1000px;
+	}
+}
+@media (max-width:768px) {
+	#home-background {
+		height: 1080px;
+	}
+}
+#home-background:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: url(../img/assets/dot-pattern.png) repeat;
+	background-color: blue;
+	opacity: 15%;
+	z-index: -1;
+	content: "";
+}
+.home-container {
+	position: relative;
+	display: table-cell;
+	top: -12%;
+	z-index: 3;
+	vertical-align: middle;
+}
+.home-title {
+	margin-top: 15rem;
+	color: white;
+	letter-spacing: 0.2rem;
+}
+.home-title h1 {
+	margin: 3rem;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 8rem;
+	text-transform: uppercase;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all .5s;
+}
+.home-title h1 .uppercase-first-letter {
+	font-size: 11rem;
+	text-transform: uppercase;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all .5s;
+}
+.home-title h2 {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 6rem;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all .5s;
+}
+.home-title:after {
+	width: 15rem;
+	height: 0.3rem;
+	position: relative;
+	display: block;
+	margin: 0.2rem auto 0.2rem;
+	background: white;
+	content: "";
+}
+.home-description {
+	padding-top: 5rem;
+	color: white;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+}
+.home-description p {
+	margin-top: 1.5rem;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.8rem;
+	line-height: 2rem;
+	letter-spacing: 0.15rem;
+}
+@media (min-width: 280px) {
+	.home-title h1 {
+		font-size: 3.5rem;
+	}
+	.home-title h1 .uppercase-first-letter {
+		font-size: 4rem;
+	}
+	.home-title h2 {
+		font-size: 2.5rem;
+	}
+	.home-description p {
+		font-size: 1.4rem;
+	}
+}
+@media (min-width: 768px) {
+	.home-title h1 {
+		font-size: 5rem;
+	}
+	.home-title h1 .uppercase-first-letter {
+		font-size: 7rem;
+	}
+	.home-title h2 {
+		font-size: 5rem;
+	}
+	.home-description p {
+		font-size: 1.7rem;
+	}
+}
+@media (min-width: 1080px) {
+	.home-title h1 {
+		font-size: 8rem;
+	}
+	.home-title h1 .uppercase-first-letter {
+		font-size: 11rem;
+	}
+	.home-title h2 {
+		font-size: 6rem;
+	}
+	.home-description p {
+		font-size: 2rem;
+	}
+}
+/* End Home View */
+
+/* Start Separator Section */
+.section-background {
+	width: 100%;
+	height: 5%;
+	display: table;
+	position: relative;
+	background-image: url(../img/bg-1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	opacity: 90%;
+	text-align: center;
+}
+.section-background:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: url(../img/assets/dot-pattern.png) repeat;
+	background-color: blue;
+	opacity: 15%;
+	z-index: -1;
+	content: "";
+}
+.section-background-title {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 8rem;
+}
+.section-background-title .uppercase-first-letter {
+	padding-bottom: 10rem;
+	text-transform: uppercase;
+}
+.section-background .section-background-title h3 {
+	margin: 3rem;
+	color: white;
+	font-size: 4.5rem;
+	letter-spacing: 0.1rem;
+}
+.section-background .section-background-title h3 .uppercase-first-letter {
+	font-size: 5rem;
+	text-transform: uppercase;
+}
+.section-background .section-background-title h4 {
+	margin: 2rem;
+	color: white;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.7rem;
+}
+.section-background .section-background-title:after {
+	width: 15rem;
+	height: 0.3rem;
+	margin: 0.2rem auto 0.2rem;
+	position: relative;
+	display: block;
+	background: white;
+	content: "";
+}
+@media (min-width: 280px) {
+	.section-background .section-background-title h3 {
+		font-size: 3.5rem;
+	}
+	.section-background .section-background-title h3 .uppercase-first-letter {
+		font-size: 4rem;
+	}
+	.section-background .section-background-title h4 {
+		font-size: 1.4rem;
+	}
+}
+@media (min-width: 720px) {
+	.section-background .section-background-title h3 {
+		font-size: 4.5rem;
+	}
+	.section-background .section-background-title h3 .uppercase-first-letter {
+		font-size: 5rem;
+	}
+	.section-background .section-background-title h4 {
+		font-size: 1.7rem;
+	}
+}
+/* End Separator Section */
+
+/* Start projects */
+#projects {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+#projects .projects-row {
+	margin-bottom: 5rem;
+}
+@media only screen and (min-width: 1800px) {
+	#projects .projects-row {
+		margin-left: -30rem;
+	}
+}
+@media only screen and (min-width: 1300px) {
+	#projects .projects-row {
+		margin-left: -10rem;
+	}
+}
+#projects h6 {
+	width: auto;
+	max-width: auto;
+	padding: 0.2rem;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.7rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+#projects h6:after {
+	width: 100%;
+	height: 0.3rem;
+	margin: 0.3rem auto 0.3rem;
+	position: relative;
+	display: block;
+	background: orange;
+	content: "";
+}
+#projects h4 {
+	padding-bottom: 0.8rem;
+	color: #2e354d;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.8rem;
+	font-weight: 800;
+}
+#projects p, ul {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.6rem;
+}
+#projects ul.roman {
+	list-style-type: lower-roman;
+}
+#projects .figure-row {
+	margin-bottom: 5rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+#projects img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 35rem;
+}
+#projects img.squared {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 50rem;
+}
+#projects a {
+	color: #fff;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.4rem;
+	text-decoration: none;
+}
+/* End projects */
+
+/* Start Tools Section */
+#tools {
+	padding-top: 6rem;
+	padding-bottom: 10rem;
+}
+.cbp-l-filters-alignCenter .cbp-filter-item {
+	margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+	padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+	color: black;
+	border-radius: 0.4rem;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 1.9rem;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.cbp-l-filters-alignCenter .cbp-filter-counter {
+	margin-bottom: 1rem;
+	border-radius: .2rem;
+	background-color: #2E354D;
+	font-size: 1.1rem;
+}
+.cbp-l-filters-alignCenter .cbp-filter-counter:before {
+	border-top: 4px solid #2E354D;
+}
+.cbp-l-filters-alignCenter .cbp-filter-item:hover {
+	color: white;
+	background: #2E354D;
+}
+.cbp-l-filters-alignCenter .cbp-filter-item.cbp-filter-item-active {
+	color: white;
+	background-color: #2E354D;
+}
+.cbp-caption-content {
+	padding: 3rem 1.25rem 1.5rem 1.25rem ;
+	text-align: center;
+}
+.cbp-caption-content h3 {
+	color: orange;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 3rem;
+}
+.cbp-caption-content p {
+	color: #ccc;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.2rem;
+}
+/* End Tools Section */
+
+/* Start Portfolio Section */
+#portfolio {
+	padding-top: 6rem;
+	padding-bottom: 10rem;
+}
+#portfolio .section-title {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#portfolio .portfolio-merits {
+	padding-top: 5rem;
+}
+#portfolio .portfolio-title {
+	margin-bottom: 3rem;
+	text-align: center;
+}
+#portfolio .portfolio-title h3 {
+	position: relative;
+	display: inline-block;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 3rem;
+}
+#portfolio .portfolio-title h3:before {
+	width: 0.2rem;
+	height: 100%;
+	left: -1rem;
+	bottom: 0;
+	display: block;
+	position: absolute;
+	background-color: orange;
+	content: '';
+}
+#portfolio .portfolio-row {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+#portfolio .portfolio-row h6 {
+	width: auto;
+	max-width: auto;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#portfolio .portfolio-row h6:after {
+	width: auto;
+	height: 0.2rem;
+	max-width: auto;
+	margin-bottom: 0.75rem;
+	margin-left: -0.4rem;
+	position: relative;
+	display: block;
+	background: orange;
+	content: "";
+}
+#portfolio .portfolio-row h4 {
+	color: #2E354D;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.8rem;
+	font-weight: 800;
+}
+#portfolio .portfolio-row h5 {
+	color: #a5a5a5;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.2rem;
+}
+#portfolio .portfolio-row p {
+	margin-bottom: 0.5rem;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.4rem;
+}
+#portfolio .portfolio-row ul {
+	margin-bottom: 0.5rem;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.4rem;
+}
+#portfolio .img {
+	position: relative;
+	overflow: hidden;
+}
+#portfolio .img img {
+	width: 28rem;
+	height: auto;
+	margin: 1rem;
+}
+#portfolio .img-info {
+	width: 28rem;
+	display: inline-block;
+	text-align: center;
+}
+#portfolio .img-info h3 {
+	width: auto;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 2rem;
+	font-weight: bold;
+}
+#portfolio .img-info h4 {
+	color: #2E354D;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+#portfolio .portfolio-info {
+	position: relative;
+	top: 50%;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.6rem;
+}
+#portfolio .portfolio-row-date {
+	width: auto;
+	max-width: 16.666667%;
+	display: flex;
+	flex: 0 0 16.666667%;
+}
+#portfolio .portfolio-row-info {
+	width: auto;
+	max-width: 83.333333%;
+	flex: 0 0 83.333333%;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+	#portfolio .portfolio-row-date {
+		width: auto;
+		max-width: 100%;
+		flex: 0 0 auto;
+	}
+	#portfolio .portfolio-row-info {
+		width: auto;
+		max-width: 83.333333%;
+		flex: 0 0 83.333333%;
+	}
+}
+/* End Portfolio Section */
+
+/* Start Get Connected */
+#get-connected {
+	padding-top: 2rem;
+	padding-bottom: 1rem
+}
+.connected-icons {
+	width: 100%;
+	display: inline-block;
+}
+.connected-icons ul {
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding-inline-start: 2rem;
+}
+.connected-icons li {
+	padding: 0.5rem;
+	display: inline-block;
+}
+.connected-icon a {
+	text-decoration: none;
+}
+.connected-icon a span {
+	display: block;
+}
+.connected-icon a .icon {
+	width: 10rem;
+	height: 10rem;
+	margin: 2rem auto 2rem auto;
+	color:white;
+	border-radius: 50%;
+	font-size: 10em;
+	line-height: 1!important;
+	-webkit-transition: 0.16s all linear;
+	-moz-transition: 0.16s all linear;
+	-ms-transition: 0.16s all linear;
+	-o-transition: 0.16s all linear;
+	transition: 0.16s all linear;
+}
+.connected-icon a:hover .icon {
+	padding-top: 2.2rem;
+	font-size: 5em;
+}
+.connected-icon a h4 {
+	color:orange;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+.connected-icon a p {
+	color:#a5a5a5;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.4rem;
+}
+@media (min-width: 280px) {
+	.connected-icon a .icon {
+		margin-bottom: 10px;
+		font-size: 7em;
+	}
+	.connected-icon a .icon.fab {
+		margin-bottom: 10px;
+		font-size: 7em;
+		width: 7rem;
+		height: 7rem;
+	}
+	.connected-icon a:hover .icon {
+		padding-top: 2.2rem;
+		font-size: 5em;
+	}
+	.connected-icon a:hover .icon.fab {
+		padding-top: 2.2rem;
+		font-size: 5em;
+		width: 5rem;
+		height: 5rem;
+	}
+	.connected-icon a p {
+		font-size: 1.2rem;
+	}
+}
+@media (min-width: 720px) {
+	.connected-icon a .icon {
+		margin-bottom: 10px;
+		font-size: 7em;
+	}
+	.connected-icon a:hover .icon {
+		padding-top: 2.2rem;
+		font-size: 5em;
+	}
+	.connected-icon a p {
+		font-size: 1.4rem;
+	}
+}
+/* End Get Connected */
+
+/* Start footer */
+footer p {
+	padding-top: 0.3rem;
+	color:#8C8989;
+	font-size: 1.4rem;
+}
+.footer-copyright {
+	padding-top: 1.3rem;
+	background-color: #1c1c1c;
+}
+footer #social-icons {
+	list-style: none;
+	float: right;
+}
+@media (max-width:992px) {
+	.footer-copyright p {
+		text-align: center;
+	}
+	footer #social-icons {
+		float: none!important;
+		text-align: center;
+		padding-left: 0;
+	}
+}
+footer #social-icons li {
+	margin-left: 1rem;
+	margin-right: 1rem;
+	font-size: 2.4rem;
+	display: inline-block;
+}
+footer #social-icons li a {
+	color: #46494a;
+}
+footer a:hover {
+	color: #ffffff;
+}
+/* End footer */
