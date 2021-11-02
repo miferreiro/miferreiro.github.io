@@ -349,7 +349,6 @@ html {
 }
 #articles h6 {
     width: auto;
-    max-width: auto;
     padding: 0.2rem;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.7rem;
@@ -405,7 +404,6 @@ html {
 }
 #projects h6 {
     width: auto;
-    max-width: auto;
     padding: 0.2rem;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.7rem;
@@ -548,7 +546,6 @@ html {
 }
 #portfolio .portfolio-row h6 {
     width: auto;
-    max-width: auto;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
@@ -557,7 +554,6 @@ html {
 #portfolio .portfolio-row h6:after {
     width: auto;
     height: 0.2rem;
-    max-width: auto;
     margin-bottom: 0.75rem;
     margin-left: -0.4rem;
     position: relative;
@@ -639,6 +635,11 @@ html {
         width: auto;
         max-width: 83.333333%;
         flex: 0 0 83.333333%;
+    }
+}
+@media (max-width: 768px) {
+    #portfolio .portfolio-row h6 {
+        position: absolute;
     }
 }
 /* End Portfolio Section */
