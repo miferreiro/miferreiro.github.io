@@ -576,7 +576,7 @@ html {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.2rem;
 }
-#portfolio .portfolio-row p {
+#portfolio .portfolio-row p, #portfolio .portfolio-row summary {
     margin-bottom: 0.5rem;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.4rem;
