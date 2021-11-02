@@ -329,6 +329,62 @@ html {
 }
 /* End Separator Section */
 
+/* Start articles */
+#articles {
+    padding-top: 5rem;
+    padding-bottom: 0;
+}
+#articles .articles-row {
+    margin-bottom: 0;
+}
+@media only screen and (min-width: 1800px) {
+    #articles .articles-row {
+        margin-left: -30rem;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    #articles .articles-row {
+        margin-left: -10rem;
+    }
+}
+#articles h6 {
+    width: auto;
+    max-width: auto;
+    padding: 0.2rem;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+#articles h6:after {
+    width: 100%;
+    height: 0.3rem;
+    margin: 0.3rem auto 0.3rem;
+    position: relative;
+    display: block;
+    background: orange;
+    content: "";
+}
+#articles h4 {
+    padding-bottom: 0.8rem;
+    color: #2e354d;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+#articles p, ul {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+}
+#articles a {
+    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+/* End articles */
+
 /* Start projects */
 #projects {
     padding-top: 5rem;
