@@ -642,6 +642,12 @@ html {
         position: absolute;
     }
 }
+#portfolio .portfolio-row a {
+    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
 /* End Portfolio Section */
 
 /* Start Get Connected */
