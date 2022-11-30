@@ -591,6 +591,9 @@ html {
     height: auto;
     margin: 1rem;
 }
+#portfolio .portfolio-description {
+    margin-top: 5%;
+}
 #portfolio .img-info {
     width: 28rem;
     display: inline-block;
